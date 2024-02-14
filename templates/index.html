@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Valentine</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" type="image/jpg" href="static/img/p.ico">
+</head>
+<body>
+    <div id="content-container"></div>
+
+    <img src="static/img/shadow5.gif" id="moving-lualana-shadow">
+    <img src="static/img/lualana.gif" id="moving-lualana">
+
+    
+    <div class="switch-container">
+        <label class="switch">
+            <input type="checkbox" id="theme-switch">
+            <span class="slider round"></span>
+        </label>
+    </div>
+    <div class="center-container">
+        <div class="main-q">Will you be my Valentine?</div>
+        <button id="yes-button" class="rounded-button">Yes</button>
+        <button id="no-button" class="rounded-button">No</button>
+    </div>
+    <div id="bisasam-container">  
+        <img src="static/img/pokemon-bulbasaur.gif" id="running-bisasam">
+    </div>
+    <div id="grass"></div>
+
+
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
+
